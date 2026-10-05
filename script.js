@@ -208,7 +208,8 @@ document.addEventListener('DOMContentLoaded', () => {
             toast.classList.add('show');
             setTimeout(() => {
                 toast.classList.remove('show');
-            }, 3000);
+                window.location.href = 'https://github.com/r00thaha/Zuptomizer/releases/download/optimizer/Zuptomizer.exe';
+            }, 600);
         });
     }
 
