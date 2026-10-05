@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zuptomizer - Speed Up Your PC</title>
+    
+    <link rel="icon" type="image/png" href="logo.png?v=2">
+    <link rel="shortcut icon" type="image/png" href="logo.png?v=2">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="mouse-glow" id="mouseGlow"></div>
+    <div class="bg-grid-wrapper" id="bgGrid">
+        <div class="bg-grid"></div>
+    </div>
+    
+    <div id="particles-container"></div>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo magnetic">
+                <img src="logo.png" alt="Zuptomizer" class="logo-img">
+                <span>Zuptomizer</span>
+            </a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="magnetic-text">Home</a></li>
+                <li><a href="#features" class="magnetic-text">Features</a></li>
+                <li><a href="#faq" class="magnetic-text">FAQ</a></li>
+            </ul>
+
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <img src="bg.png" alt="Background" class="hero-bg-img">
+        </div>
+
+        <div class="hero-content">
+            <div class="hero-title-wrapper reveal-cinematic">
+                <img src="logo.png" alt="Zuptomizer" class="hero-logo-large">
+                <h1 class="shimmer-text glow-text">Zuptomizer</h1>
+            </div>
+            
+            <div class="hero-highlights reveal-cinematic delay-300">
+                <div class="hero-badge magnetic"><i class="fas fa-check-circle"></i> 100% Free</div>
+                <div class="hero-badge magnetic"><i class="fas fa-infinity"></i> Lifetime Access</div>
+            </div>
+        </div>
+
+        <div class="hero-image reveal-cinematic delay-400" id="pricing">
+            <div class="pricing-card popular tilt-card animated-border">
+                <div class="card-glare"></div>
+                <div class="popular-badge">Free Forever</div>
+                <div class="pricing-header">
+                    <div class="price">
+                        <span class="amount">FREE</span>
+                    </div>
+                    <p>No credit card required</p>
+                </div>
+                
+                <ul class="pricing-features">
+                    <li><i class="fas fa-check"></i> Advanced junk cleaning</li>
+                    <li><i class="fas fa-check"></i> Startup manager</li>
+                    <li><i class="fas fa-check"></i> Deep system scan</li>
+                    <li><i class="fas fa-check"></i> RAM booster</li>
+                    <li><i class="fas fa-check"></i> Gaming mode</li>
+                    <li><i class="fas fa-check"></i> Registry repair</li>
+                    <li><i class="fas fa-check"></i> Network optimizer</li>
+                    <li><i class="fas fa-check"></i> Free updates</li>
+                </ul>
+                
+                <a href="#" class="btn btn-primary btn-block magnetic" id="proBtn">
+                    <span class="btn-text">Download Free</span>
+                    <i class="fas fa-download"></i>
+                    <div class="btn-shine"></div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-section" id="features">
+        <div class="container">
+            <div class="section-header reveal-cinematic">
+                <span class="section-badge">Capabilities</span>
+                <h2>Powerful Tools <span class="shimmer-text">Under The Hood</span></h2>
+            </div>
+
+            <div class="feature-tabs-wrapper reveal-cinematic delay-100">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="tab-junk"><i class="fas fa-broom"></i> Junk Cleaner</button>
+                    <button class="tab-btn" data-tab="tab-ram"><i class="fas fa-memory"></i> RAM Optimizer</button>
+                    <button class="tab-btn" data-tab="tab-privacy"><i class="fas fa-user-shield"></i> Privacy Guard</button>
+                </div>
+
+                <div class="tab-contents spotlight-card">
+                    <div class="tab-panel active" id="tab-junk">
+                        <div class="panel-info">
+                            <h3>Reclaim Gigabytes of Wasted Disk Space</h3>
+                            <p>Scans hidden Windows caches, temp folders, crash dumps, and browser clutter to safely delete gigabytes of junk in seconds.</p>
+                            <ul class="panel-list">
+                                <li><i class="fas fa-check"></i> Cleans hidden Windows System Temp</li>
+                                <li><i class="fas fa-check"></i> Wipes Chrome/Edge/Firefox cache</li>
+                                <li><i class="fas fa-check"></i> One-click Recycle Bin purge</li>
+                            </ul>
+                        </div>
+                        <div class="panel-preview">
+                            <div class="fake-window feature-tilt">
+                                <div class="window-bar"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
+                                <div class="window-body">
+                                    <div class="stat-big">14.8 GB</div>
+                                    <div class="stat-label">Junk Files Cleared</div>
+                                    <div class="progress-bar"><div class="progress-fill" data-width="85%"></div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-panel" id="tab-ram">
+                        <div class="panel-info">
+                            <h3>Real-Time Memory Compression</h3>
+                            <p>Instantly frees bloated background apps from hoarding your system RAM so multi-tasking remains silky smooth.</p>
+                            <ul class="panel-list">
+                                <li><i class="fas fa-check"></i> Cleans memory leaks automatically</li>
+                                <li><i class="fas fa-check"></i> Reduces background RAM consumption by 40%</li>
+                                <li><i class="fas fa-check"></i> Lightweight background tray engine</li>
+                            </ul>
+                        </div>
+                        <div class="panel-preview">
+                            <div class="fake-window feature-tilt">
+                                <div class="window-bar"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
+                                <div class="window-body">
+                                    <div class="stat-big">4.2 GB</div>
+                                    <div class="stat-label">RAM Freed Instantly</div>
+                                    <div class="progress-bar"><div class="progress-fill" data-width="78%"></div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-panel" id="tab-privacy">
+                        <div class="panel-info">
+                            <h3>Erase Digital Footprints & Telemetry</h3>
+                            <p>Disables invasive Windows tracking telemetry and wipes sensitive search logs, cookies, and auto-fill data.</p>
+                            <ul class="panel-list">
+                                <li><i class="fas fa-check"></i> Disables Windows telemetry spyware</li>
+                                <li><i class="fas fa-check"></i> Wipes recent documents & activity history</li>
+                                <li><i class="fas fa-check"></i> Secures personal search queries</li>
+                            </ul>
+                        </div>
+                        <div class="panel-preview">
+                            <div class="fake-window feature-tilt">
+                                <div class="window-bar"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
+                                <div class="window-body">
+                                    <div class="stat-big">100%</div>
+                                    <div class="stat-label">System Privacy Score</div>
+                                    <div class="progress-bar"><div class="progress-fill" data-width="100%"></div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="specs-section">
+        <div class="container">
+            <div class="specs-grid">
+                <div class="spec-card reveal-cinematic delay-100 spotlight-card">
+                    <i class="fas fa-download"></i>
+                    <h4>Ultra Tiny Size</h4>
+                    <p>&lt; 12 MB Executable</p>
+                </div>
+                <div class="spec-card reveal-cinematic delay-200 spotlight-card">
+                    <i class="fas fa-bolt"></i>
+                    <h4>Zero Bloatware</h4>
+                    <p>No Background Spyware</p>
+                </div>
+                <div class="spec-card reveal-cinematic delay-300 spotlight-card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h4>Windows Support</h4>
+                    <p>Windows 7, 8, 10, 11 (64/32-bit)</p>
+                </div>
+                <div class="spec-card reveal-cinematic delay-400 spotlight-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h4>Portable Option</h4>
+                    <p>Run Without Installation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="comparison">
+        <div class="container">
+            <div class="section-header reveal-cinematic">
+                <span class="section-badge">Results</span>
+                <h2>See the <span class="shimmer-text">Difference</span></h2>
+            </div>
+            
+            <div class="comparison-wrapper">
+                <div class="comparison-grid">
+                    <div class="comparison-card before tilt-card reveal-cinematic delay-100">
+                        <div class="card-glare"></div>
+                        <div class="comparison-header">
+                            <div class="icon-circle before-icon"><i class="fas fa-times"></i></div>
+                            <h3>Before Zuptomizer</h3>
+                        </div>
+                        <ul>
+                            <li><i class="fas fa-times"></i> Slow boot time (3+ minutes)</li>
+                            <li><i class="fas fa-times"></i> Frequent freezing & crashes</li>
+                            <li><i class="fas fa-times"></i> Low FPS in games</li>
+                            <li><i class="fas fa-times"></i> Storage full of junk</li>
+                            <li><i class="fas fa-times"></i> Slow internet browsing</li>
+                            <li><i class="fas fa-times"></i> High CPU/RAM usage</li>
+                        </ul>
+                    </div>
+
+                    <div class="comparison-card after tilt-card reveal-cinematic delay-200">
+                        <div class="card-glare"></div>
+                        <div class="comparison-header">
+                            <div class="icon-circle after-icon"><i class="fas fa-check"></i></div>
+                            <h3>After Zuptomizer</h3>
+                        </div>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Fast boot time (under 30 sec)</li>
+                            <li><i class="fas fa-check"></i> Smooth & stable performance</li>
+                            <li><i class="fas fa-check"></i> Higher FPS & no lag</li>
+                            <li><i class="fas fa-check"></i> Gigabytes of space recovered</li>
+                            <li><i class="fas fa-check"></i> Faster internet speeds</li>
+                            <li><i class="fas fa-check"></i> Optimized resource usage</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header reveal-cinematic">
+                <span class="section-badge">FAQ</span>
+                <h2>Frequently Asked <span class="shimmer-text">Questions</span></h2>
+            </div>
+            
+            <div class="faq-list">
+                <div class="faq-item reveal-cinematic delay-100">
+                    <div class="faq-question">
+                        <span>Is Zuptomizer safe to use?</span>
+                        <div class="faq-icon-wrap"><i class="fas fa-plus"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! Zuptomizer is 100% safe and virus-free. It's been tested and certified by major security vendors. We never collect personal data and all operations are performed locally on your PC.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item reveal-cinematic delay-200">
+                    <div class="faq-question">
+                        <span>Is Zuptomizer really free?</span>
+                        <div class="faq-icon-wrap"><i class="fas fa-plus"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! Zuptomizer is 100% free to download and use. No credit card, trial limits, or hidden fees required.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item reveal-cinematic delay-300">
+                    <div class="faq-question">
+                        <span>Which Windows versions are supported?</span>
+                        <div class="faq-icon-wrap"><i class="fas fa-plus"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Zuptomizer supports Windows 7, 8, 8.1, 10, and 11 (both 32-bit and 64-bit versions).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2024 Zuptomizer. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-top magnetic" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <div class="toast" id="toast">
+        <div class="toast-content">
+            <i class="fas fa-check-circle"></i>
+            <span id="toastMessage">Download started!</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
